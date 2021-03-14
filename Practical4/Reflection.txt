@@ -1,0 +1,3 @@
+Practical helps me be fimiliar with the git and GitHub and normal commands. 
+However, not all is going well like I have troubled in connecting GitHub. I always failed entering the website and git push files from my repo to the GitHub.
+Looking forward to solution.  
