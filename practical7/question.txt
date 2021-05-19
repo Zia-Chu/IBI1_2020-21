@@ -1,0 +1,5 @@
+Question: How have new cases and total cases developed over time in Spain?
+Start from line 59 and end at line 71
+Discussion: The total case of covid 19 in Spain starts to increase and the new cases are not 0 since January 2020.
+And the new cases increase rapidly in February and peak in the middle of February.
+Then the new cases decrease and the increasing rate of total cases decease as well.
