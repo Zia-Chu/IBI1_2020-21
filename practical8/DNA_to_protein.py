@@ -1,4 +1,5 @@
 seq='ATGCGACTACGATCGAGGGCC'
+# store the codon information as a dictionary
 table = {
     'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M',
     'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T',
@@ -17,7 +18,9 @@ table = {
     'TAC':'Y', 'TAT':'Y', 'TAA':'_', 'TAG':'_',
     'TGC':'C', 'TGT':'C', 'TGA':'_', 'TGG':'W'
     }
+# create a blank variable in advance
 protein = ""
+#find sequence 3 by 3
 for i in range(0,len(seq),3):
-    protein += table[seq[i:i+3]]
+    protein += table[seq[i:i+3]]# Extend the protein sequence
 print(protein)
