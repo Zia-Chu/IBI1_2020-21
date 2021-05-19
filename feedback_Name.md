@@ -1,0 +1,2 @@
+In week 5, I made some mitakes in comparing d and e because I ignored the special possible that d=e. Also, would have been helpful to print a comparison of W and Z, rather than have the marker judge the two print statements independently.
+Formula should be no infected in generation+1 = no infected in generation + (r * no infected in generation). Otherwise, its fine. Last but not least, I ought to write more detailed pseudocode.
