@@ -1,8 +1,9 @@
 import os
 import re
+# find and open the file we created in last task
 os.chdir('C:\cygwin64\home\wjw\Practical8')
 f=open('unknown_function.fa','r')
-
+# create two list to store sequence and name seperately
 DNA=[]
 name=[]
 for line in f:
@@ -12,6 +13,7 @@ for line in f:
         newline=re.findall(r'(^\S+)\s+',line)
         name.append(line)
 f.close()
+# use a dictionary to store transcription information
 table={'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M',
     'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T',
     'AAC':'N', 'AAT':'N', 'AAA':'K', 'AAG':'K',
@@ -33,15 +35,18 @@ aminostr=''
 amino=[]
 for i in DNA:
     seq=str(i)
-    valid=len(seq)-len(seq)%3
+    valid=len(seq)-len(seq)%3 # read sequence 3 by 3 and assign the codon
     for j in range(0,valid,3):
         key=seq[j:j+3]
         aminostr=aminostr+table[key]
     amino.append(aminostr)
     aminostr=''
+#caculate the length
 protein_length=[]
 for i in amino:
     protein_length.append(len(i))
+# allow to rename the FASTA file
+# the new name is still end with .fa
 file_name=input('Please input filename: ')
 if file_name.endswith('.fa'):
     f2=open(file_name,'w')
